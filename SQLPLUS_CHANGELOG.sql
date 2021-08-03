@@ -6,7 +6,7 @@ CREATE TABLE categories
   category_name char(50) NOT NULL,
   CONSTRAINT categories_pk PRIMARY KEY (category_id)
 );
-quit;
+
 --rollback drop TABLE categories;
 
 --changeset TsviZ:insert_INTO_categories runwith:sqlplus
@@ -14,7 +14,7 @@ INSERT INTO categories
 (category_id, category_name)
 VALUES
 (150, 'Miscellaneous');
-quit;
+
 --rollback delete from categories where category_id=150;
 
 --changeset TsviZ:select_from_categories runwith:sqlplus runOnChange:true
@@ -26,8 +26,24 @@ set trimspool on
 spool categories.csv
 
 SELECT * FROM categories;
-quit;
 --rollback select * from categories;
+
+--changeset TsviZ:create_TABLE_employees runwith:sqlplus
+CREATE TABLE EMPLOYEES 
+   (	"EMPLOYEE_ID" NUMBER(6,0) NOT NULL ENABLE, 
+	"FIRST_NAME" VARCHAR2(20), 
+	"LAST_NAME" VARCHAR2(25) CONSTRAINT "EMP_LAST_NAME_NN" NOT NULL ENABLE, 
+	"EMAIL" VARCHAR2(25) CONSTRAINT "EMP_EMAIL_NN" NOT NULL ENABLE, 
+	"PHONE_NUMBER" VARCHAR2(20), 
+	"HIRE_DATE" DATE CONSTRAINT "EMP_HIRE_DATE_NN" NOT NULL ENABLE, 
+	"JOB_ID" VARCHAR2(10) CONSTRAINT "EMP_JOB_NN" NOT NULL ENABLE, 
+	"SALARY" NUMBER(8,2), 
+	"COMMISSION_PCT" NUMBER(2,2), 
+	"MANAGER_ID" NUMBER(6,0), 
+	"DEPARTMENT_ID" NUMBER(4,0), 
+	 CONSTRAINT "EMP_EMP_ID_PK" PRIMARY KEY ("EMPLOYEE_ID")
+   );
+--rollback drop table employees;
 
 --changeset TsviZ:insert_INTO_EMPLOYEES runwith:sqlplus runOnChange:true
 -- ALTER SESSION ENABLE PARALLEL DML;
@@ -64,7 +80,7 @@ BEGIN
    RETURN total_wages;
 END;
 /
-quit;
+
 --rollback drop function dept_salary;
 
 --changeset TsviZ:exec_dept_salary runwith:sqlplus runOnChange:true
@@ -72,15 +88,29 @@ SET SERVEROUTPUT ON
 VARIABLE salary NUMBER;
 EXECUTE :salary := dept_salary(20);
 -- EXEC DBMS_OUTPUT.PUT_LINE(dept_salary(20));
-quit;
+
 --rollback select * from employees;
 
+--changeset TsviZ:createTableWell runwith:sqlplus
+CREATE TABLE well
+ (
+   well_name VARCHAR2(10 BYTE) NOT NULL,
+   uwi NUMBER(6, 0),
+   MAX_SALARY NUMBER(6, 0),
+   CONSTRAINT well_name_PK PRIMARY KEY (well_name)
+ )
+;
+
+--rollback drop table well;
+
 --changeset TsviZ:createView_V_TEST4 runwith:sqlplus runOnChange:true
+DEFINE tbl = well
+DEFINE SCHEMA_OWNER = SQLPLUS_TEST
 SET DEFINE ON
 CREATE OR REPLACE VIEW &SCHEMA_OWNER..V_TEST4 AS
 
 SELECT uwi, well_name
 
-  FROM well;
+  FROM &tbl;
 
-EXIT;
+--rollback drop view V_TEST4;
