@@ -84,3 +84,13 @@ SELECT uwi, well_name
   FROM well;
 
 EXIT;
+
+--changeset TsviZ:createView_V_TEST45 runwith:sqlplus runOnChange:true
+SET DEFINE ON
+CREATE OR REPLACE VIEW &SCHEMA_OWNER..V_TEST5 AS
+
+SELECT uwi, well_name
+
+  FROM well;
+
+EXIT;
