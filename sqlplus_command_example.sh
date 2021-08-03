@@ -1,1 +1,0 @@
-sqlplus -L HR_TEST/password@tsvi.datical.net:1521/BUCKET_02 @/Users/support.liquibase.net/CLI-Projects/Oracle_CLI/2_hr_test/proc_test.sql
