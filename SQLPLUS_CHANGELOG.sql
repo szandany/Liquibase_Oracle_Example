@@ -113,4 +113,28 @@ SELECT uwi, well_name
 
   FROM &tbl;
 
+<<<<<<< HEAD
 --rollback drop view V_TEST4;
+=======
+EXIT;
+
+--changeset TsviZ:createView_V_TEST45 runwith:sqlplus runOnChange:true
+SET DEFINE ON
+CREATE OR REPLACE VIEW &SCHEMA_OWNER..V_TEST5 AS
+
+SELECT uwi, well_name
+
+  FROM well;
+
+EXIT;
+
+--changeset TsviZ:createView_V_TEST46 runwith:sqlplus runOnChange:true
+SET DEFINE ON
+CREATE OR REPLACE VIEW &SCHEMA_OWNER..V_TEST6 AS
+
+SELECT uwi, well_name
+
+  FROM well;
+
+EXIT;
+>>>>>>> 9dbff2b826fad701439e692ca9d89fa606ac008b
