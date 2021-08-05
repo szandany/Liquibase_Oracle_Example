@@ -1,4 +1,4 @@
---liquibase formatted sql
+-- liquibase formatted sql changeLogId:bea2cd2e-bb82-4c60-a144-2e0e6ab4aec0
 
 --changeset TsviZ:create_TABLE_categories runwith:sqlplus 
 CREATE TABLE categories
