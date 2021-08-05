@@ -48,7 +48,7 @@ END;
 --rollback DROP PROCEDURE add_job_history112;
 
 --changeset AmyS:45678-createTrigger_t splitStatements:false context:PROD
-create or replace TRIGGER t
+create or replace TRIGGER t2
  BEFORE
    INSERT OR
    UPDATE OF salary, department_id OR
@@ -68,7 +68,7 @@ BEGIN
 END;
 /
 
---rollback DROP TRIGGER t
+--rollback DROP TRIGGER t2
 
 --changeset TsviZ:45-create_sequence_my_test_id_seq context:HR_DEV
 create sequence my_test_id_seq increment by 1;
