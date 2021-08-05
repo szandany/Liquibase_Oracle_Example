@@ -89,7 +89,7 @@ VARIABLE salary NUMBER;
 EXECUTE :salary := dept_salary(20);
 -- EXEC DBMS_OUTPUT.PUT_LINE(dept_salary(20));
 
---rollback select * from employees;
+--rollback select * from employees3;
 
 --changeset TsviZ:createTableWell runwith:sqlplus
 CREATE TABLE well
