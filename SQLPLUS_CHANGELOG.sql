@@ -28,8 +28,8 @@ spool categories.csv
 SELECT * FROM categories;
 --rollback select * from categories;
 
---changeset TsviZ:create_TABLE_employees runwith:sqlplus
-CREATE TABLE EMPLOYEES 
+--changeset TsviZ:create_TABLE_employees2 runwith:sqlplus
+CREATE TABLE EMPLOYEES2 
    (	"EMPLOYEE_ID" NUMBER(6,0) NOT NULL ENABLE, 
 	"FIRST_NAME" VARCHAR2(20), 
 	"LAST_NAME" VARCHAR2(25) CONSTRAINT "EMP_LAST_NAME_NN" NOT NULL ENABLE, 
@@ -41,19 +41,19 @@ CREATE TABLE EMPLOYEES
 	"COMMISSION_PCT" NUMBER(2,2), 
 	"MANAGER_ID" NUMBER(6,0), 
 	"DEPARTMENT_ID" NUMBER(4,0), 
-	 CONSTRAINT "EMP_EMP_ID_PK" PRIMARY KEY ("EMPLOYEE_ID")
+	 CONSTRAINT "EMP_EMP_ID_PK2" PRIMARY KEY ("EMPLOYEE_ID")
    );
 --rollback drop table employees;
 
 --changeset TsviZ:insert_INTO_EMPLOYEES runwith:sqlplus runOnChange:true
 -- ALTER SESSION ENABLE PARALLEL DML;
 
-INSERT /*+ parallel(8) enable_parallel_dml */ INTO EMPLOYEES (employee_id, last_name, email, 
+INSERT /*+ parallel(8) enable_parallel_dml */ INTO EMPLOYEES2 (employee_id, last_name, email, 
       hire_date, job_id, salary, commission_pct, department_id) 
    VALUES (205, 'Tsvi', 'szandany@liquibase.com', 
       sysdate, 'ENGINEER', 1.2E3, NULL, 20);
       
-INSERT /*+ parallel(8) enable_parallel_dml */ INTO EMPLOYEES (employee_id, last_name, email, 
+INSERT /*+ parallel(8) enable_parallel_dml */ INTO EMPLOYEES2 (employee_id, last_name, email, 
       hire_date, job_id, salary, commission_pct, department_id) 
    VALUES (206, 'Bill', 'bill@liquibase.com', 
       sysdate, 'ENGINEER', 1.2E3, NULL, 20);
