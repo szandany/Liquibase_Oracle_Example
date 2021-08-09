@@ -115,3 +115,4 @@ SELECT uwi, well_name
 
 --rollback drop view V_TEST4;
 
+
