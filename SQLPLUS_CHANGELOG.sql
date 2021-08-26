@@ -62,7 +62,7 @@ INSERT /*+ parallel(8) enable_parallel_dml */ INTO EMPLOYEES3 (employee_id, last
 --changeset TsviZ:create_function_dept_salary runwith:sqlplus runOnChange:true
 CREATE OR REPLACE FUNCTION dept_salary (dnum NUMBER) RETURN NUMBER IS
    CURSOR emp_cursor IS
-   select salary, commission_pct from employees where department_id = dnum;
+   select salary, commission_pct from EMPLOYEES3 where department_id = dnum;
    total_wages NUMBER(11, 2) := 0;
    counter NUMBER(10) := 1;
 BEGIN
@@ -80,7 +80,7 @@ BEGIN
    RETURN total_wages;
 END;
 /
-
+quit;
 --rollback drop function dept_salary;
 
 --changeset TsviZ:exec_dept_salary runwith:sqlplus runOnChange:true
