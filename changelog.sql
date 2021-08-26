@@ -1,7 +1,6 @@
 -- liquibase formatted sql changeLogId:81e3bcd0-4a4c-4292-aa2c-6e8a33d18b8c
 
 --changeset SteveZ:45555-createTable_TABLE200 context:HR_DEV labels:Jira100
---comment: some comment 
 CREATE TABLE TABLE200
  (
    JOB_ID VARCHAR2(10 BYTE) NOT NULL,
