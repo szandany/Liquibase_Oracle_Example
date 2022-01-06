@@ -1,0 +1,726 @@
+[2021-10-21 08:48:03] INFO [liquibase] Check settings configuration file located at '/C:/Users/Datical/liquibase.checks-settings.conf'.
+[2021-10-21 08:48:03] SEVERE [liquibase] Failed to parse SQL
+liquibase.repackaged.net.sf.jsqlparser.JSQLParserException: Encountered unexpected token: "ENABLE" "ENABLE"
+    at line 3, column 36.
+
+Was expecting one of:
+
+    ")"
+    ","
+
+	at liquibase.repackaged.net.sf.jsqlparser.parser.CCJSqlParserUtil.parseStatement(CCJSqlParserUtil.java:190)
+	at liquibase.repackaged.net.sf.jsqlparser.parser.CCJSqlParserUtil.parse(CCJSqlParserUtil.java:63)
+	at com.datical.liquibase.ext.checks.JSqlParserCache.parseSql(JSqlParserCache.java:35)
+	at com.datical.liquibase.ext.checks.dynamic.AbstractTableNamingRule.getValue(AbstractTableNamingRule.java:41)
+	at com.datical.liquibase.ext.checks.dynamic.AbstractObjectNamingRule.internalEvaluate(AbstractObjectNamingRule.java:72)
+	at com.datical.liquibase.ext.rules.core.AbstractLiquibaseDynamicRule.evaluate(AbstractLiquibaseDynamicRule.java:31)
+	at com.datical.liquibase.ext.rules.core.QualityChecksRulesEngine.doFire(QualityChecksRulesEngine.java:87)
+	at com.datical.liquibase.ext.rules.core.QualityChecksRulesEngine.fire(QualityChecksRulesEngine.java:46)
+	at com.datical.liquibase.ext.command.checks.ChecksRunCommandStep.runCheck(ChecksRunCommandStep.java:318)
+	at com.datical.liquibase.ext.command.checks.ChecksRunCommandStep.runChecks(ChecksRunCommandStep.java:294)
+	at com.datical.liquibase.ext.command.checks.ChecksRunCommandStep.run(ChecksRunCommandStep.java:140)
+	at liquibase.command.CommandScope.execute(CommandScope.java:147)
+	at liquibase.integration.commandline.CommandRunner.call(CommandRunner.java:45)
+	at liquibase.integration.commandline.CommandRunner.call(CommandRunner.java:15)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:1953)
+	at picocli.CommandLine.access$1300(CommandLine.java:145)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2352)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2346)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2311)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at picocli.CommandLine.execute(CommandLine.java:2078)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$1(LiquibaseCommandLine.java:323)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:162)
+	at liquibase.integration.commandline.LiquibaseCommandLine.execute(LiquibaseCommandLine.java:289)
+	at liquibase.integration.commandline.LiquibaseCommandLine.main(LiquibaseCommandLine.java:80)
+Caused by: liquibase.repackaged.net.sf.jsqlparser.parser.ParseException: Encountered unexpected token: "ENABLE" "ENABLE"
+    at line 3, column 36.
+
+Was expecting one of:
+
+    ")"
+    ","
+
+	at liquibase.repackaged.net.sf.jsqlparser.parser.CCJSqlParser.generateParseException(CCJSqlParser.java:31066)
+	at liquibase.repackaged.net.sf.jsqlparser.parser.CCJSqlParser.jj_consume_token(CCJSqlParser.java:30899)
+	at liquibase.repackaged.net.sf.jsqlparser.parser.CCJSqlParser.CreateTable(CCJSqlParser.java:15029)
+	at liquibase.repackaged.net.sf.jsqlparser.parser.CCJSqlParser.SingleStatement(CCJSqlParser.java:281)
+	at liquibase.repackaged.net.sf.jsqlparser.parser.CCJSqlParser.Statement(CCJSqlParser.java:153)
+	at liquibase.repackaged.net.sf.jsqlparser.parser.CCJSqlParserUtil.parseStatement(CCJSqlParserUtil.java:188)
+	... 25 more
+
+[2021-10-21 08:48:04] SEVERE [liquibase] Failed to parse SQL
+liquibase.repackaged.net.sf.jsqlparser.JSQLParserException: Encountered unexpected token: "create" "CREATE"
+    at line 1, column 1.
+
+Was expecting one of:
+
+    "("
+    "ALTER"
+    "CALL"
+    "COMMENT"
+    "COMMIT"
+    "DECLARE"
+    "DELETE"
+    "DESCRIBE"
+    "DROP"
+    "EXEC"
+    "EXECUTE"
+    "EXPLAIN"
+    "GRANT"
+    "INSERT"
+    "MERGE"
+    "PURGE"
+    "RENAME"
+    "RESET"
+    "ROLLBACK"
+    "SAVEPOINT"
+    "SET"
+    "SHOW"
+    "TRUNCATE"
+    "UPDATE"
+    "UPSERT"
+    "USE"
+    "VALUES"
+    "WITH"
+    <K_SELECT>
+
+	at liquibase.repackaged.net.sf.jsqlparser.parser.CCJSqlParserUtil.parseStatement(CCJSqlParserUtil.java:190)
+	at liquibase.repackaged.net.sf.jsqlparser.parser.CCJSqlParserUtil.parse(CCJSqlParserUtil.java:63)
+	at com.datical.liquibase.ext.checks.JSqlParserCache.parseSql(JSqlParserCache.java:35)
+	at com.datical.liquibase.ext.checks.dynamic.AbstractTableNamingRule.getValue(AbstractTableNamingRule.java:41)
+	at com.datical.liquibase.ext.checks.dynamic.AbstractObjectNamingRule.internalEvaluate(AbstractObjectNamingRule.java:72)
+	at com.datical.liquibase.ext.rules.core.AbstractLiquibaseDynamicRule.evaluate(AbstractLiquibaseDynamicRule.java:31)
+	at com.datical.liquibase.ext.rules.core.QualityChecksRulesEngine.doFire(QualityChecksRulesEngine.java:87)
+	at com.datical.liquibase.ext.rules.core.QualityChecksRulesEngine.fire(QualityChecksRulesEngine.java:46)
+	at com.datical.liquibase.ext.command.checks.ChecksRunCommandStep.runCheck(ChecksRunCommandStep.java:318)
+	at com.datical.liquibase.ext.command.checks.ChecksRunCommandStep.runChecks(ChecksRunCommandStep.java:294)
+	at com.datical.liquibase.ext.command.checks.ChecksRunCommandStep.run(ChecksRunCommandStep.java:140)
+	at liquibase.command.CommandScope.execute(CommandScope.java:147)
+	at liquibase.integration.commandline.CommandRunner.call(CommandRunner.java:45)
+	at liquibase.integration.commandline.CommandRunner.call(CommandRunner.java:15)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:1953)
+	at picocli.CommandLine.access$1300(CommandLine.java:145)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2352)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2346)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2311)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at picocli.CommandLine.execute(CommandLine.java:2078)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$1(LiquibaseCommandLine.java:323)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:162)
+	at liquibase.integration.commandline.LiquibaseCommandLine.execute(LiquibaseCommandLine.java:289)
+	at liquibase.integration.commandline.LiquibaseCommandLine.main(LiquibaseCommandLine.java:80)
+Caused by: liquibase.repackaged.net.sf.jsqlparser.parser.ParseException: Encountered unexpected token: "create" "CREATE"
+    at line 1, column 1.
+
+Was expecting one of:
+
+    "("
+    "ALTER"
+    "CALL"
+    "COMMENT"
+    "COMMIT"
+    "DECLARE"
+    "DELETE"
+    "DESCRIBE"
+    "DROP"
+    "EXEC"
+    "EXECUTE"
+    "EXPLAIN"
+    "GRANT"
+    "INSERT"
+    "MERGE"
+    "PURGE"
+    "RENAME"
+    "RESET"
+    "ROLLBACK"
+    "SAVEPOINT"
+    "SET"
+    "SHOW"
+    "TRUNCATE"
+    "UPDATE"
+    "UPSERT"
+    "USE"
+    "VALUES"
+    "WITH"
+    <K_SELECT>
+
+	at liquibase.repackaged.net.sf.jsqlparser.parser.CCJSqlParser.generateParseException(CCJSqlParser.java:31066)
+	at liquibase.repackaged.net.sf.jsqlparser.parser.CCJSqlParser.jj_consume_token(CCJSqlParser.java:30899)
+	at liquibase.repackaged.net.sf.jsqlparser.parser.CCJSqlParser.SingleStatement(CCJSqlParser.java:374)
+	at liquibase.repackaged.net.sf.jsqlparser.parser.CCJSqlParser.Statement(CCJSqlParser.java:153)
+	at liquibase.repackaged.net.sf.jsqlparser.parser.CCJSqlParserUtil.parseStatement(CCJSqlParserUtil.java:188)
+	... 25 more
+
+[2021-10-21 08:48:04] SEVERE [liquibase.integration] liquibase.command.CommandFailedException: Checks run command exited with an error code of 1
+liquibase.exception.CommandExecutionException: liquibase.command.CommandFailedException: Checks run command exited with an error code of 1
+	at liquibase.command.CommandScope.execute(CommandScope.java:153)
+	at liquibase.integration.commandline.CommandRunner.call(CommandRunner.java:45)
+	at liquibase.integration.commandline.CommandRunner.call(CommandRunner.java:15)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:1953)
+	at picocli.CommandLine.access$1300(CommandLine.java:145)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2352)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2346)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2311)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at picocli.CommandLine.execute(CommandLine.java:2078)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$1(LiquibaseCommandLine.java:323)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:162)
+	at liquibase.integration.commandline.LiquibaseCommandLine.execute(LiquibaseCommandLine.java:289)
+	at liquibase.integration.commandline.LiquibaseCommandLine.main(LiquibaseCommandLine.java:80)
+Caused by: liquibase.command.CommandFailedException: Checks run command exited with an error code of 1
+	at liquibase.command.CommandResultsBuilder.commandFailed(CommandResultsBuilder.java:59)
+	at com.datical.liquibase.ext.command.checks.ChecksRunCommandStep.run(ChecksRunCommandStep.java:233)
+	at liquibase.command.CommandScope.execute(CommandScope.java:147)
+	... 14 more
+
+[2021-10-21 08:48:13] FINE [liquibase.configuration] Found 'liquibase.hub.apiKey' configuration of '*****'
+    environment variable 'LIQUIBASE_HUB_API_KEY' of '*****'
+[2021-10-21 08:48:13] FINE [liquibase.configuration] No configuration value for liquibase.filterLogMessages found
+[2021-10-21 08:48:13] FINE [liquibase.resource] Adding path C:\Users\Datical\Oracle\. to resourceAccessor liquibase.resource.FileSystemResourceAccessor
+[2021-10-21 08:48:13] FINE [liquibase.configuration] No configuration value for liquibase.shouldRun aka should.run found
+[2021-10-21 08:48:13] FINE [liquibase.configuration] Configuration liquibase.shouldRun is using the default value of true
+[2021-10-21 08:48:13] FINE [liquibase.configuration] No configuration value for liquibase.outputFile found
+[2021-10-21 08:48:13] FINE [liquibase.configuration] No configuration value for liquibase.command.checks.run.changelogFile found
+[2021-10-21 08:48:13] FINE [liquibase.configuration] Found 'liquibase.command.changelogFile' configuration of 'changelog.sql'
+    environment variable 'LIQUIBASE_COMMAND_CHANGELOG_FILE' of 'changelog.sql'
+[2021-10-21 08:48:13] FINE [liquibase.configuration] No configuration value for liquibase.command.checks.run.checksScope found
+[2021-10-21 08:48:13] FINE [liquibase.configuration] Configuration liquibase.command.checks.run.checksScope is using the default value of changelog
+[2021-10-21 08:48:13] FINE [liquibase.configuration] Found 'liquibase.command.checks.run.checksSettingsFile' configuration of '../liquibase.checks-settings.conf'
+    environment variable 'LIQUIBASE_COMMAND_CHECKS_RUN_CHECKS_SETTINGS_FILE' of '../liquibase.checks-settings.conf'
+[2021-10-21 08:48:13] FINE [liquibase.command] Pipeline for command 'checks run: com.datical.liquibase.ext.command.checks.ChecksRunCommandStep
+[2021-10-21 08:48:14] FINE [liquibase.resource] Closing duplicate stream for file:/C:/Users/Datical/Oracle/changelog.sql
+[2021-10-21 08:48:14] FINE [liquibase.servicelocator] Loaded liquibase.parser.ChangeLogParser instance liquibase.parser.core.formattedsql.FormattedSqlChangeLogParser
+[2021-10-21 08:48:14] FINE [liquibase.servicelocator] Loaded liquibase.parser.ChangeLogParser instance liquibase.parser.core.json.JsonChangeLogParser
+[2021-10-21 08:48:14] FINE [liquibase.servicelocator] Loaded liquibase.parser.ChangeLogParser instance liquibase.parser.core.sql.SqlChangeLogParser
+[2021-10-21 08:48:14] FINE [liquibase.servicelocator] Loaded liquibase.parser.ChangeLogParser instance liquibase.parser.core.xml.XMLChangeLogSAXParser
+[2021-10-21 08:48:14] FINE [liquibase.servicelocator] Loaded liquibase.parser.ChangeLogParser instance liquibase.parser.core.yaml.YamlChangeLogParser
+[2021-10-21 08:48:14] FINE [liquibase.resource] Closing duplicate stream for file:/C:/Users/Datical/Oracle/changelog.sql
+[2021-10-21 08:48:14] FINE [liquibase.configuration] No configuration value for liquibase.supportPropertyEscaping aka enableEscaping found
+[2021-10-21 08:48:14] FINE [liquibase.configuration] Configuration liquibase.supportPropertyEscaping is using the default value of false
+[2021-10-21 08:48:14] FINE [liquibase.resource] Closing duplicate stream for file:/C:/Users/Datical/Oracle/changelog.sql
+[2021-10-21 08:48:14] FINE [liquibase.configuration] No configuration value for liquibase.outputFileEncoding found
+[2021-10-21 08:48:14] FINE [liquibase.configuration] Configuration liquibase.outputFileEncoding is using the default value of UTF-8
+[2021-10-21 08:48:14] FINE [liquibase.servicelocator] Loaded com.datical.liquibase.ext.rules.core.AbstractLiquibaseRule instance com.datical.liquibase.ext.checks.dynamic.CheckTableNamePattern
+[2021-10-21 08:48:14] FINE [liquibase.servicelocator] Loaded com.datical.liquibase.ext.rules.core.AbstractLiquibaseRule instance com.datical.liquibase.ext.checks.dynamic.SqlNotAllowedToGrantOfSpecificPrivileges
+[2021-10-21 08:48:14] FINE [liquibase.servicelocator] Loaded com.datical.liquibase.ext.rules.core.AbstractLiquibaseRule instance com.datical.liquibase.ext.checks.dynamic.CheckTableNameNotInPattern
+[2021-10-21 08:48:14] FINE [liquibase.servicelocator] Loaded com.datical.liquibase.ext.rules.core.AbstractLiquibaseRule instance com.datical.liquibase.ext.checks.dynamic.CheckForSpecificPatternsInSQL
+[2021-10-21 08:48:14] FINE [liquibase.servicelocator] Loaded com.datical.liquibase.ext.rules.core.AbstractLiquibaseRule instance com.datical.liquibase.ext.checks.dynamic.TableColumnCountWarning
+[2021-10-21 08:48:14] FINE [liquibase.servicelocator] Loaded com.datical.liquibase.ext.rules.core.AbstractLiquibaseRule instance com.datical.liquibase.ext.checks.basic.ContextMustBeSet
+[2021-10-21 08:48:14] FINE [liquibase.servicelocator] Loaded com.datical.liquibase.ext.rules.core.AbstractLiquibaseRule instance com.datical.liquibase.ext.checks.basic.SqlNotAllowedToContainGrantWithGrantOption
+[2021-10-21 08:48:14] FINE [liquibase.servicelocator] Loaded com.datical.liquibase.ext.rules.core.AbstractLiquibaseRule instance com.datical.liquibase.ext.checks.basic.LabelMustBeSet
+[2021-10-21 08:48:14] FINE [liquibase.servicelocator] Loaded com.datical.liquibase.ext.rules.core.AbstractLiquibaseRule instance com.datical.liquibase.ext.checks.basic.SqlNotAllowedToContainGrantWithAdminOption
+[2021-10-21 08:48:14] FINE [liquibase.servicelocator] Loaded com.datical.liquibase.ext.rules.core.AbstractLiquibaseRule instance com.datical.liquibase.ext.checks.basic.WarnOnTableTruncate
+[2021-10-21 08:48:14] FINE [liquibase.servicelocator] Loaded com.datical.liquibase.ext.rules.core.AbstractLiquibaseRule instance com.datical.liquibase.ext.checks.basic.WarnOnColumnDrops
+[2021-10-21 08:48:14] FINE [liquibase.servicelocator] Loaded com.datical.liquibase.ext.rules.core.AbstractLiquibaseRule instance com.datical.liquibase.ext.checks.basic.WarnOnTableDrops
+[2021-10-21 08:48:14] FINE [liquibase.servicelocator] Loaded com.datical.liquibase.ext.rules.core.AbstractLiquibaseRule instance com.datical.liquibase.ext.checks.basic.SqlNotAllowedToContainRevoke
+[2021-10-21 08:48:14] FINE [liquibase.servicelocator] Loaded com.datical.liquibase.ext.rules.core.AbstractLiquibaseRule instance com.datical.liquibase.ext.checks.basic.SqlNotAllowedToContainGrant
+[2021-10-21 08:48:14] FINE [liquibase.servicelocator] Loaded com.datical.liquibase.ext.rules.core.AbstractLiquibaseRule instance com.datical.liquibase.ext.checks.basic.ChangesetCommentCheck
+[2021-10-21 08:48:14] FINE [liquibase.servicelocator] Loaded com.datical.liquibase.ext.rules.core.AbstractLiquibaseRule instance com.datical.liquibase.ext.checks.basic.WarnOnDataTypeModification
+[2021-10-21 08:48:14] INFO [liquibase] Check settings configuration file located at '/C:/Users/Datical/liquibase.checks-settings.conf'.
+[2021-10-21 08:48:14] FINE [liquibase] Engine parameters { skipOnFirstAppliedRule = false, skipOnFirstNonTriggeredRule = false, skipOnFirstFailedRule = false, priorityThreshold = 2147483647 }
+[2021-10-21 08:48:14] FINE [liquibase] Registered rules:
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Detection of 'GRANT' Statements', description = 'This check warns a user when SQL contains 'GRANT' statements so that they can ensure that the privilege being granted won't lead to security issues.', priority = '10'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Detection of 'REVOKE' Statements', description = 'This check warns a user when SQL contains 'REVOKE' statements so that they can ensure that the privilege being revoked won't lead to data access and dependency issues.', priority = '20'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn when 'DROP TABLE' detected', description = 'This check warns a user when a table is being dropped so that they can ensure that dropping the table won't lead to unintentional loss of data.', priority = '30'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn when 'DROP COLUMN' detected', description = 'This check warns a user when a column is being dropped so that they can ensure that dropping the column won't lead to unintentional loss of data.', priority = '40'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn when 'MODIFY <column>' detected', description = 'This check warns a user when a change will result in modification of a data type so they can ensure that modifying the data type won't lead to unintentional loss of data', priority = '50'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Check for specific patterns in sql', description = 'This check scans raw SQL for the presence of specific patterns and warns the user when they are found.', priority = '60'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Check Table Column Count', description = 'Ensures that no table has more than a threshold number of columns.', priority = '70'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Check Table Name Pattern', description = 'This check confirms that table names match a specific pattern.', priority = '80'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Check Table Name Not in Pattern', description = 'This check confirms that table names do not match a specific pattern.', priority = '85'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Grant of Specific Privileges', description = 'This check warns a user when changeset includes or generates sql that grants specific privileges to a user or role', priority = '90'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn when 'TRUNCATE TABLE' detected', description = 'This check warns a user when a table is being truncated so that they can ensure that truncating the table won't lead to unintentional loss of data.', priority = '100'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Detection of grant that contains 'WITH GRANT OPTION'', description = 'This check warns a user when SQL contains 'GRANT' statements that include the 'WITH GRANT OPTION' clause so that they can ensure that the privilege being granted won't lead to security issues', priority = '110'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Detection of grant that contains 'WITH ADMIN OPTION'', description = 'This check warns a user when SQL contains 'GRANT' statements that include the 'WITH ADMIN OPTION' clause so that they can ensure that the privilege being granted won't lead to security issues', priority = '130'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Changesets Must Have a Label Assigned', description = 'This check enforces the Liquibase recommendation that labels be assigned to each changeset to provide better deployment control and to enhance traceability of efforts across changesets.', priority = '170'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Changesets Must Have a Context Assigned', description = 'This check enforces the Liquibase recommendation that contexts be assigned to each changeset to provide better deployment control and to enhance traceability of efforts across changesets.', priority = '173'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Changesets Must Have a Comment Assigned', description = 'This check enforces the Liquibase recommendation that comments be added to each changeset to document the purpose of a changeset for other/future consumers of this changelog', priority = '176'}
+[2021-10-21 08:48:14] FINE [liquibase] Known facts:
+[2021-10-21 08:48:14] FINE [liquibase] Fact{name='CHANGESET', value=changelog.sql::45555-createTable_TABLE200::SteveZ}
+[2021-10-21 08:48:14] FINE [liquibase] Rules evaluation started
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn on Detection of 'GRANT' Statements' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn on Detection of 'REVOKE' Statements' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn when 'DROP TABLE' detected' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn when 'DROP COLUMN' detected' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn when 'MODIFY <column>' detected' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Check for specific patterns in sql' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Check Table Column Count' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Cache miss for CacheKey{sql='CREATE TABLE TABLE200
+ (
+   JOB_ID VARCHAR2(10 BYTE) NOT NULL,
+   MIN_SALARY NUMBER(6, 0),
+   MAX_SALARY NUMBER(6, 0),
+   CONSTRAINT JOB_ID_PK200 PRIMARY KEY (JOB_ID)
+ )', withSquareBracketQuotation=true}
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Check Table Name Not in Pattern' triggered
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Check Table Name Not in Pattern' performed successfully
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn when 'TRUNCATE TABLE' detected' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn on Detection of grant that contains 'WITH GRANT OPTION'' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn on Detection of grant that contains 'WITH ADMIN OPTION'' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Engine parameters { skipOnFirstAppliedRule = false, skipOnFirstNonTriggeredRule = false, skipOnFirstFailedRule = false, priorityThreshold = 2147483647 }
+[2021-10-21 08:48:14] FINE [liquibase] Registered rules:
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Detection of 'GRANT' Statements', description = 'This check warns a user when SQL contains 'GRANT' statements so that they can ensure that the privilege being granted won't lead to security issues.', priority = '10'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Detection of 'REVOKE' Statements', description = 'This check warns a user when SQL contains 'REVOKE' statements so that they can ensure that the privilege being revoked won't lead to data access and dependency issues.', priority = '20'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn when 'DROP TABLE' detected', description = 'This check warns a user when a table is being dropped so that they can ensure that dropping the table won't lead to unintentional loss of data.', priority = '30'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn when 'DROP COLUMN' detected', description = 'This check warns a user when a column is being dropped so that they can ensure that dropping the column won't lead to unintentional loss of data.', priority = '40'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn when 'MODIFY <column>' detected', description = 'This check warns a user when a change will result in modification of a data type so they can ensure that modifying the data type won't lead to unintentional loss of data', priority = '50'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Check for specific patterns in sql', description = 'This check scans raw SQL for the presence of specific patterns and warns the user when they are found.', priority = '60'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Check Table Column Count', description = 'Ensures that no table has more than a threshold number of columns.', priority = '70'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Check Table Name Pattern', description = 'This check confirms that table names match a specific pattern.', priority = '80'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Check Table Name Not in Pattern', description = 'This check confirms that table names do not match a specific pattern.', priority = '85'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Grant of Specific Privileges', description = 'This check warns a user when changeset includes or generates sql that grants specific privileges to a user or role', priority = '90'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn when 'TRUNCATE TABLE' detected', description = 'This check warns a user when a table is being truncated so that they can ensure that truncating the table won't lead to unintentional loss of data.', priority = '100'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Detection of grant that contains 'WITH GRANT OPTION'', description = 'This check warns a user when SQL contains 'GRANT' statements that include the 'WITH GRANT OPTION' clause so that they can ensure that the privilege being granted won't lead to security issues', priority = '110'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Detection of grant that contains 'WITH ADMIN OPTION'', description = 'This check warns a user when SQL contains 'GRANT' statements that include the 'WITH ADMIN OPTION' clause so that they can ensure that the privilege being granted won't lead to security issues', priority = '130'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Changesets Must Have a Label Assigned', description = 'This check enforces the Liquibase recommendation that labels be assigned to each changeset to provide better deployment control and to enhance traceability of efforts across changesets.', priority = '170'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Changesets Must Have a Context Assigned', description = 'This check enforces the Liquibase recommendation that contexts be assigned to each changeset to provide better deployment control and to enhance traceability of efforts across changesets.', priority = '173'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Changesets Must Have a Comment Assigned', description = 'This check enforces the Liquibase recommendation that comments be added to each changeset to document the purpose of a changeset for other/future consumers of this changelog', priority = '176'}
+[2021-10-21 08:48:14] FINE [liquibase] Known facts:
+[2021-10-21 08:48:14] FINE [liquibase] Fact{name='CHANGESET', value=changelog.sql::45555-createTable_EMPLOYEES::SteveZ}
+[2021-10-21 08:48:14] FINE [liquibase] Rules evaluation started
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn on Detection of 'GRANT' Statements' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn on Detection of 'REVOKE' Statements' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn when 'DROP TABLE' detected' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn when 'DROP COLUMN' detected' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn when 'MODIFY <column>' detected' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Check for specific patterns in sql' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Check Table Column Count' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Cache miss for CacheKey{sql='CREATE TABLE EMPLOYEES
+(	
+  EMPLOYEE_ID NUMBER(6,0) NOT NULL ENABLE, 
+	FIRST_NAME VARCHAR2(20), 
+	LAST_NAME VARCHAR2(25) CONSTRAINT "EMP_LAST_NAME_NN" NOT NULL ENABLE, 
+	EMAIL VARCHAR2(25) CONSTRAINT "EMP_EMAIL_NN" NOT NULL ENABLE, 
+	PHONE_NUMBER VARCHAR2(20), 
+	HIRE_DATE DATE CONSTRAINT "EMP_HIRE_DATE_NN" NOT NULL ENABLE, 
+	JOB_ID VARCHAR2(10) CONSTRAINT "EMP_JOB_NN" NOT NULL ENABLE, 
+	SALARY NUMBER(8,2), 
+	COMMISSION_PCT NUMBER(2,2), 
+	MANAGER_ID NUMBER(6,0), 
+	DEPARTMENT_ID NUMBER(4,0), 
+	CONSTRAINT EMP_EMP_ID_PK PRIMARY KEY ("EMPLOYEE_ID"))', withSquareBracketQuotation=true}
+[2021-10-21 08:48:14] SEVERE [liquibase] Failed to parse SQL
+liquibase.repackaged.net.sf.jsqlparser.JSQLParserException: Encountered unexpected token: "ENABLE" "ENABLE"
+    at line 3, column 36.
+
+Was expecting one of:
+
+    ")"
+    ","
+
+	at liquibase.repackaged.net.sf.jsqlparser.parser.CCJSqlParserUtil.parseStatement(CCJSqlParserUtil.java:190)
+	at liquibase.repackaged.net.sf.jsqlparser.parser.CCJSqlParserUtil.parse(CCJSqlParserUtil.java:63)
+	at com.datical.liquibase.ext.checks.JSqlParserCache.parseSql(JSqlParserCache.java:35)
+	at com.datical.liquibase.ext.checks.dynamic.AbstractTableNamingRule.getValue(AbstractTableNamingRule.java:41)
+	at com.datical.liquibase.ext.checks.dynamic.AbstractObjectNamingRule.internalEvaluate(AbstractObjectNamingRule.java:72)
+	at com.datical.liquibase.ext.rules.core.AbstractLiquibaseDynamicRule.evaluate(AbstractLiquibaseDynamicRule.java:31)
+	at com.datical.liquibase.ext.rules.core.QualityChecksRulesEngine.doFire(QualityChecksRulesEngine.java:87)
+	at com.datical.liquibase.ext.rules.core.QualityChecksRulesEngine.fire(QualityChecksRulesEngine.java:46)
+	at com.datical.liquibase.ext.command.checks.ChecksRunCommandStep.runCheck(ChecksRunCommandStep.java:318)
+	at com.datical.liquibase.ext.command.checks.ChecksRunCommandStep.runChecks(ChecksRunCommandStep.java:294)
+	at com.datical.liquibase.ext.command.checks.ChecksRunCommandStep.run(ChecksRunCommandStep.java:140)
+	at liquibase.command.CommandScope.execute(CommandScope.java:147)
+	at liquibase.integration.commandline.CommandRunner.call(CommandRunner.java:45)
+	at liquibase.integration.commandline.CommandRunner.call(CommandRunner.java:15)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:1953)
+	at picocli.CommandLine.access$1300(CommandLine.java:145)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2352)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2346)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2311)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at picocli.CommandLine.execute(CommandLine.java:2078)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$1(LiquibaseCommandLine.java:323)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:162)
+	at liquibase.integration.commandline.LiquibaseCommandLine.execute(LiquibaseCommandLine.java:289)
+	at liquibase.integration.commandline.LiquibaseCommandLine.main(LiquibaseCommandLine.java:80)
+Caused by: liquibase.repackaged.net.sf.jsqlparser.parser.ParseException: Encountered unexpected token: "ENABLE" "ENABLE"
+    at line 3, column 36.
+
+Was expecting one of:
+
+    ")"
+    ","
+
+	at liquibase.repackaged.net.sf.jsqlparser.parser.CCJSqlParser.generateParseException(CCJSqlParser.java:31066)
+	at liquibase.repackaged.net.sf.jsqlparser.parser.CCJSqlParser.jj_consume_token(CCJSqlParser.java:30899)
+	at liquibase.repackaged.net.sf.jsqlparser.parser.CCJSqlParser.CreateTable(CCJSqlParser.java:15029)
+	at liquibase.repackaged.net.sf.jsqlparser.parser.CCJSqlParser.SingleStatement(CCJSqlParser.java:281)
+	at liquibase.repackaged.net.sf.jsqlparser.parser.CCJSqlParser.Statement(CCJSqlParser.java:153)
+	at liquibase.repackaged.net.sf.jsqlparser.parser.CCJSqlParserUtil.parseStatement(CCJSqlParserUtil.java:188)
+	... 25 more
+
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Check Table Name Not in Pattern' triggered
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Check Table Name Not in Pattern' performed successfully
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn when 'TRUNCATE TABLE' detected' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn on Detection of grant that contains 'WITH GRANT OPTION'' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn on Detection of grant that contains 'WITH ADMIN OPTION'' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Engine parameters { skipOnFirstAppliedRule = false, skipOnFirstNonTriggeredRule = false, skipOnFirstFailedRule = false, priorityThreshold = 2147483647 }
+[2021-10-21 08:48:14] FINE [liquibase] Registered rules:
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Detection of 'GRANT' Statements', description = 'This check warns a user when SQL contains 'GRANT' statements so that they can ensure that the privilege being granted won't lead to security issues.', priority = '10'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Detection of 'REVOKE' Statements', description = 'This check warns a user when SQL contains 'REVOKE' statements so that they can ensure that the privilege being revoked won't lead to data access and dependency issues.', priority = '20'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn when 'DROP TABLE' detected', description = 'This check warns a user when a table is being dropped so that they can ensure that dropping the table won't lead to unintentional loss of data.', priority = '30'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn when 'DROP COLUMN' detected', description = 'This check warns a user when a column is being dropped so that they can ensure that dropping the column won't lead to unintentional loss of data.', priority = '40'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn when 'MODIFY <column>' detected', description = 'This check warns a user when a change will result in modification of a data type so they can ensure that modifying the data type won't lead to unintentional loss of data', priority = '50'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Check for specific patterns in sql', description = 'This check scans raw SQL for the presence of specific patterns and warns the user when they are found.', priority = '60'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Check Table Column Count', description = 'Ensures that no table has more than a threshold number of columns.', priority = '70'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Check Table Name Pattern', description = 'This check confirms that table names match a specific pattern.', priority = '80'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Check Table Name Not in Pattern', description = 'This check confirms that table names do not match a specific pattern.', priority = '85'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Grant of Specific Privileges', description = 'This check warns a user when changeset includes or generates sql that grants specific privileges to a user or role', priority = '90'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn when 'TRUNCATE TABLE' detected', description = 'This check warns a user when a table is being truncated so that they can ensure that truncating the table won't lead to unintentional loss of data.', priority = '100'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Detection of grant that contains 'WITH GRANT OPTION'', description = 'This check warns a user when SQL contains 'GRANT' statements that include the 'WITH GRANT OPTION' clause so that they can ensure that the privilege being granted won't lead to security issues', priority = '110'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Detection of grant that contains 'WITH ADMIN OPTION'', description = 'This check warns a user when SQL contains 'GRANT' statements that include the 'WITH ADMIN OPTION' clause so that they can ensure that the privilege being granted won't lead to security issues', priority = '130'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Changesets Must Have a Label Assigned', description = 'This check enforces the Liquibase recommendation that labels be assigned to each changeset to provide better deployment control and to enhance traceability of efforts across changesets.', priority = '170'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Changesets Must Have a Context Assigned', description = 'This check enforces the Liquibase recommendation that contexts be assigned to each changeset to provide better deployment control and to enhance traceability of efforts across changesets.', priority = '173'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Changesets Must Have a Comment Assigned', description = 'This check enforces the Liquibase recommendation that comments be added to each changeset to document the purpose of a changeset for other/future consumers of this changelog', priority = '176'}
+[2021-10-21 08:48:14] FINE [liquibase] Known facts:
+[2021-10-21 08:48:14] FINE [liquibase] Fact{name='CHANGESET', value=changelog.sql::45556-CreatePROC_add_job_history112::MikeO}
+[2021-10-21 08:48:14] FINE [liquibase] Rules evaluation started
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn on Detection of 'GRANT' Statements' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn on Detection of 'REVOKE' Statements' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn when 'DROP TABLE' detected' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn when 'DROP COLUMN' detected' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn when 'MODIFY <column>' detected' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Check for specific patterns in sql' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Check Table Column Count' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Cache miss for CacheKey{sql='CREATE OR REPLACE PROCEDURE add_job_history112
+ (  p_emp_id          job_history.employee_id%type
+  , p_start_date      job_history.start_date%type
+  , p_end_date        job_history.end_date%type
+  , p_job_id          job_history.job_id%type
+  , p_department_id   job_history.department_id%type
+  )
+IS
+BEGIN
+ INSERT INTO job_history (employee_id, start_date, end_date,
+                          job_id, department_id)
+   VALUES(p_emp_id, p_start_date, p_end_date, p_job_id, p_department_id);
+END;', withSquareBracketQuotation=true}
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Check Table Name Not in Pattern' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn when 'TRUNCATE TABLE' detected' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn on Detection of grant that contains 'WITH GRANT OPTION'' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn on Detection of grant that contains 'WITH ADMIN OPTION'' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Engine parameters { skipOnFirstAppliedRule = false, skipOnFirstNonTriggeredRule = false, skipOnFirstFailedRule = false, priorityThreshold = 2147483647 }
+[2021-10-21 08:48:14] FINE [liquibase] Registered rules:
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Detection of 'GRANT' Statements', description = 'This check warns a user when SQL contains 'GRANT' statements so that they can ensure that the privilege being granted won't lead to security issues.', priority = '10'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Detection of 'REVOKE' Statements', description = 'This check warns a user when SQL contains 'REVOKE' statements so that they can ensure that the privilege being revoked won't lead to data access and dependency issues.', priority = '20'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn when 'DROP TABLE' detected', description = 'This check warns a user when a table is being dropped so that they can ensure that dropping the table won't lead to unintentional loss of data.', priority = '30'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn when 'DROP COLUMN' detected', description = 'This check warns a user when a column is being dropped so that they can ensure that dropping the column won't lead to unintentional loss of data.', priority = '40'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn when 'MODIFY <column>' detected', description = 'This check warns a user when a change will result in modification of a data type so they can ensure that modifying the data type won't lead to unintentional loss of data', priority = '50'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Check for specific patterns in sql', description = 'This check scans raw SQL for the presence of specific patterns and warns the user when they are found.', priority = '60'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Check Table Column Count', description = 'Ensures that no table has more than a threshold number of columns.', priority = '70'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Check Table Name Pattern', description = 'This check confirms that table names match a specific pattern.', priority = '80'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Check Table Name Not in Pattern', description = 'This check confirms that table names do not match a specific pattern.', priority = '85'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Grant of Specific Privileges', description = 'This check warns a user when changeset includes or generates sql that grants specific privileges to a user or role', priority = '90'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn when 'TRUNCATE TABLE' detected', description = 'This check warns a user when a table is being truncated so that they can ensure that truncating the table won't lead to unintentional loss of data.', priority = '100'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Detection of grant that contains 'WITH GRANT OPTION'', description = 'This check warns a user when SQL contains 'GRANT' statements that include the 'WITH GRANT OPTION' clause so that they can ensure that the privilege being granted won't lead to security issues', priority = '110'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Detection of grant that contains 'WITH ADMIN OPTION'', description = 'This check warns a user when SQL contains 'GRANT' statements that include the 'WITH ADMIN OPTION' clause so that they can ensure that the privilege being granted won't lead to security issues', priority = '130'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Changesets Must Have a Label Assigned', description = 'This check enforces the Liquibase recommendation that labels be assigned to each changeset to provide better deployment control and to enhance traceability of efforts across changesets.', priority = '170'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Changesets Must Have a Context Assigned', description = 'This check enforces the Liquibase recommendation that contexts be assigned to each changeset to provide better deployment control and to enhance traceability of efforts across changesets.', priority = '173'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Changesets Must Have a Comment Assigned', description = 'This check enforces the Liquibase recommendation that comments be added to each changeset to document the purpose of a changeset for other/future consumers of this changelog', priority = '176'}
+[2021-10-21 08:48:14] FINE [liquibase] Known facts:
+[2021-10-21 08:48:14] FINE [liquibase] Fact{name='CHANGESET', value=changelog.sql::45678-createTrigger_t::AmyS}
+[2021-10-21 08:48:14] FINE [liquibase] Rules evaluation started
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn on Detection of 'GRANT' Statements' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn on Detection of 'REVOKE' Statements' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn when 'DROP TABLE' detected' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn when 'DROP COLUMN' detected' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn when 'MODIFY <column>' detected' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Check for specific patterns in sql' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Check Table Column Count' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Cache miss for CacheKey{sql='create or replace TRIGGER t2
+ BEFORE
+   INSERT OR
+   UPDATE OF salary, department_id OR
+   DELETE
+ ON EMPLOYEES
+BEGIN
+ CASE
+   WHEN INSERTING THEN
+     DBMS_OUTPUT.PUT_LINE('Inserting')', withSquareBracketQuotation=true}
+[2021-10-21 08:48:14] SEVERE [liquibase] Failed to parse SQL
+liquibase.repackaged.net.sf.jsqlparser.JSQLParserException: Encountered unexpected token: "create" "CREATE"
+    at line 1, column 1.
+
+Was expecting one of:
+
+    "("
+    "ALTER"
+    "CALL"
+    "COMMENT"
+    "COMMIT"
+    "DECLARE"
+    "DELETE"
+    "DESCRIBE"
+    "DROP"
+    "EXEC"
+    "EXECUTE"
+    "EXPLAIN"
+    "GRANT"
+    "INSERT"
+    "MERGE"
+    "PURGE"
+    "RENAME"
+    "RESET"
+    "ROLLBACK"
+    "SAVEPOINT"
+    "SET"
+    "SHOW"
+    "TRUNCATE"
+    "UPDATE"
+    "UPSERT"
+    "USE"
+    "VALUES"
+    "WITH"
+    <K_SELECT>
+
+	at liquibase.repackaged.net.sf.jsqlparser.parser.CCJSqlParserUtil.parseStatement(CCJSqlParserUtil.java:190)
+	at liquibase.repackaged.net.sf.jsqlparser.parser.CCJSqlParserUtil.parse(CCJSqlParserUtil.java:63)
+	at com.datical.liquibase.ext.checks.JSqlParserCache.parseSql(JSqlParserCache.java:35)
+	at com.datical.liquibase.ext.checks.dynamic.AbstractTableNamingRule.getValue(AbstractTableNamingRule.java:41)
+	at com.datical.liquibase.ext.checks.dynamic.AbstractObjectNamingRule.internalEvaluate(AbstractObjectNamingRule.java:72)
+	at com.datical.liquibase.ext.rules.core.AbstractLiquibaseDynamicRule.evaluate(AbstractLiquibaseDynamicRule.java:31)
+	at com.datical.liquibase.ext.rules.core.QualityChecksRulesEngine.doFire(QualityChecksRulesEngine.java:87)
+	at com.datical.liquibase.ext.rules.core.QualityChecksRulesEngine.fire(QualityChecksRulesEngine.java:46)
+	at com.datical.liquibase.ext.command.checks.ChecksRunCommandStep.runCheck(ChecksRunCommandStep.java:318)
+	at com.datical.liquibase.ext.command.checks.ChecksRunCommandStep.runChecks(ChecksRunCommandStep.java:294)
+	at com.datical.liquibase.ext.command.checks.ChecksRunCommandStep.run(ChecksRunCommandStep.java:140)
+	at liquibase.command.CommandScope.execute(CommandScope.java:147)
+	at liquibase.integration.commandline.CommandRunner.call(CommandRunner.java:45)
+	at liquibase.integration.commandline.CommandRunner.call(CommandRunner.java:15)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:1953)
+	at picocli.CommandLine.access$1300(CommandLine.java:145)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2352)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2346)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2311)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at picocli.CommandLine.execute(CommandLine.java:2078)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$1(LiquibaseCommandLine.java:323)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:162)
+	at liquibase.integration.commandline.LiquibaseCommandLine.execute(LiquibaseCommandLine.java:289)
+	at liquibase.integration.commandline.LiquibaseCommandLine.main(LiquibaseCommandLine.java:80)
+Caused by: liquibase.repackaged.net.sf.jsqlparser.parser.ParseException: Encountered unexpected token: "create" "CREATE"
+    at line 1, column 1.
+
+Was expecting one of:
+
+    "("
+    "ALTER"
+    "CALL"
+    "COMMENT"
+    "COMMIT"
+    "DECLARE"
+    "DELETE"
+    "DESCRIBE"
+    "DROP"
+    "EXEC"
+    "EXECUTE"
+    "EXPLAIN"
+    "GRANT"
+    "INSERT"
+    "MERGE"
+    "PURGE"
+    "RENAME"
+    "RESET"
+    "ROLLBACK"
+    "SAVEPOINT"
+    "SET"
+    "SHOW"
+    "TRUNCATE"
+    "UPDATE"
+    "UPSERT"
+    "USE"
+    "VALUES"
+    "WITH"
+    <K_SELECT>
+
+	at liquibase.repackaged.net.sf.jsqlparser.parser.CCJSqlParser.generateParseException(CCJSqlParser.java:31066)
+	at liquibase.repackaged.net.sf.jsqlparser.parser.CCJSqlParser.jj_consume_token(CCJSqlParser.java:30899)
+	at liquibase.repackaged.net.sf.jsqlparser.parser.CCJSqlParser.SingleStatement(CCJSqlParser.java:374)
+	at liquibase.repackaged.net.sf.jsqlparser.parser.CCJSqlParser.Statement(CCJSqlParser.java:153)
+	at liquibase.repackaged.net.sf.jsqlparser.parser.CCJSqlParserUtil.parseStatement(CCJSqlParserUtil.java:188)
+	... 25 more
+
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Check Table Name Not in Pattern' triggered
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Check Table Name Not in Pattern' performed successfully
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn when 'TRUNCATE TABLE' detected' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn on Detection of grant that contains 'WITH GRANT OPTION'' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn on Detection of grant that contains 'WITH ADMIN OPTION'' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Engine parameters { skipOnFirstAppliedRule = false, skipOnFirstNonTriggeredRule = false, skipOnFirstFailedRule = false, priorityThreshold = 2147483647 }
+[2021-10-21 08:48:14] FINE [liquibase] Registered rules:
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Detection of 'GRANT' Statements', description = 'This check warns a user when SQL contains 'GRANT' statements so that they can ensure that the privilege being granted won't lead to security issues.', priority = '10'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Detection of 'REVOKE' Statements', description = 'This check warns a user when SQL contains 'REVOKE' statements so that they can ensure that the privilege being revoked won't lead to data access and dependency issues.', priority = '20'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn when 'DROP TABLE' detected', description = 'This check warns a user when a table is being dropped so that they can ensure that dropping the table won't lead to unintentional loss of data.', priority = '30'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn when 'DROP COLUMN' detected', description = 'This check warns a user when a column is being dropped so that they can ensure that dropping the column won't lead to unintentional loss of data.', priority = '40'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn when 'MODIFY <column>' detected', description = 'This check warns a user when a change will result in modification of a data type so they can ensure that modifying the data type won't lead to unintentional loss of data', priority = '50'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Check for specific patterns in sql', description = 'This check scans raw SQL for the presence of specific patterns and warns the user when they are found.', priority = '60'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Check Table Column Count', description = 'Ensures that no table has more than a threshold number of columns.', priority = '70'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Check Table Name Pattern', description = 'This check confirms that table names match a specific pattern.', priority = '80'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Check Table Name Not in Pattern', description = 'This check confirms that table names do not match a specific pattern.', priority = '85'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Grant of Specific Privileges', description = 'This check warns a user when changeset includes or generates sql that grants specific privileges to a user or role', priority = '90'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn when 'TRUNCATE TABLE' detected', description = 'This check warns a user when a table is being truncated so that they can ensure that truncating the table won't lead to unintentional loss of data.', priority = '100'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Detection of grant that contains 'WITH GRANT OPTION'', description = 'This check warns a user when SQL contains 'GRANT' statements that include the 'WITH GRANT OPTION' clause so that they can ensure that the privilege being granted won't lead to security issues', priority = '110'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Detection of grant that contains 'WITH ADMIN OPTION'', description = 'This check warns a user when SQL contains 'GRANT' statements that include the 'WITH ADMIN OPTION' clause so that they can ensure that the privilege being granted won't lead to security issues', priority = '130'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Changesets Must Have a Label Assigned', description = 'This check enforces the Liquibase recommendation that labels be assigned to each changeset to provide better deployment control and to enhance traceability of efforts across changesets.', priority = '170'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Changesets Must Have a Context Assigned', description = 'This check enforces the Liquibase recommendation that contexts be assigned to each changeset to provide better deployment control and to enhance traceability of efforts across changesets.', priority = '173'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Changesets Must Have a Comment Assigned', description = 'This check enforces the Liquibase recommendation that comments be added to each changeset to document the purpose of a changeset for other/future consumers of this changelog', priority = '176'}
+[2021-10-21 08:48:14] FINE [liquibase] Known facts:
+[2021-10-21 08:48:14] FINE [liquibase] Fact{name='CHANGESET', value=changelog.sql::45-create_sequence_my_test_id_seq::TsviZ}
+[2021-10-21 08:48:14] FINE [liquibase] Rules evaluation started
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn on Detection of 'GRANT' Statements' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn on Detection of 'REVOKE' Statements' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn when 'DROP TABLE' detected' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn when 'DROP COLUMN' detected' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn when 'MODIFY <column>' detected' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Check for specific patterns in sql' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Check Table Column Count' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Cache miss for CacheKey{sql='create sequence my_test_id_seq increment by 1', withSquareBracketQuotation=true}
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Check Table Name Not in Pattern' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn when 'TRUNCATE TABLE' detected' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn on Detection of grant that contains 'WITH GRANT OPTION'' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn on Detection of grant that contains 'WITH ADMIN OPTION'' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Engine parameters { skipOnFirstAppliedRule = false, skipOnFirstNonTriggeredRule = false, skipOnFirstFailedRule = false, priorityThreshold = 2147483647 }
+[2021-10-21 08:48:14] FINE [liquibase] Registered rules:
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Detection of 'GRANT' Statements', description = 'This check warns a user when SQL contains 'GRANT' statements so that they can ensure that the privilege being granted won't lead to security issues.', priority = '10'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Detection of 'REVOKE' Statements', description = 'This check warns a user when SQL contains 'REVOKE' statements so that they can ensure that the privilege being revoked won't lead to data access and dependency issues.', priority = '20'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn when 'DROP TABLE' detected', description = 'This check warns a user when a table is being dropped so that they can ensure that dropping the table won't lead to unintentional loss of data.', priority = '30'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn when 'DROP COLUMN' detected', description = 'This check warns a user when a column is being dropped so that they can ensure that dropping the column won't lead to unintentional loss of data.', priority = '40'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn when 'MODIFY <column>' detected', description = 'This check warns a user when a change will result in modification of a data type so they can ensure that modifying the data type won't lead to unintentional loss of data', priority = '50'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Check for specific patterns in sql', description = 'This check scans raw SQL for the presence of specific patterns and warns the user when they are found.', priority = '60'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Check Table Column Count', description = 'Ensures that no table has more than a threshold number of columns.', priority = '70'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Check Table Name Pattern', description = 'This check confirms that table names match a specific pattern.', priority = '80'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Check Table Name Not in Pattern', description = 'This check confirms that table names do not match a specific pattern.', priority = '85'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Grant of Specific Privileges', description = 'This check warns a user when changeset includes or generates sql that grants specific privileges to a user or role', priority = '90'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn when 'TRUNCATE TABLE' detected', description = 'This check warns a user when a table is being truncated so that they can ensure that truncating the table won't lead to unintentional loss of data.', priority = '100'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Detection of grant that contains 'WITH GRANT OPTION'', description = 'This check warns a user when SQL contains 'GRANT' statements that include the 'WITH GRANT OPTION' clause so that they can ensure that the privilege being granted won't lead to security issues', priority = '110'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Detection of grant that contains 'WITH ADMIN OPTION'', description = 'This check warns a user when SQL contains 'GRANT' statements that include the 'WITH ADMIN OPTION' clause so that they can ensure that the privilege being granted won't lead to security issues', priority = '130'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Changesets Must Have a Label Assigned', description = 'This check enforces the Liquibase recommendation that labels be assigned to each changeset to provide better deployment control and to enhance traceability of efforts across changesets.', priority = '170'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Changesets Must Have a Context Assigned', description = 'This check enforces the Liquibase recommendation that contexts be assigned to each changeset to provide better deployment control and to enhance traceability of efforts across changesets.', priority = '173'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Changesets Must Have a Comment Assigned', description = 'This check enforces the Liquibase recommendation that comments be added to each changeset to document the purpose of a changeset for other/future consumers of this changelog', priority = '176'}
+[2021-10-21 08:48:14] FINE [liquibase] Known facts:
+[2021-10-21 08:48:14] FINE [liquibase] Fact{name='CHANGESET', value=changelog.sql::45-create_table_my_test::TsviZ}
+[2021-10-21 08:48:14] FINE [liquibase] Rules evaluation started
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn on Detection of 'GRANT' Statements' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn on Detection of 'REVOKE' Statements' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn when 'DROP TABLE' detected' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn when 'DROP COLUMN' detected' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn when 'MODIFY <column>' detected' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Check for specific patterns in sql' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Check Table Column Count' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Cache miss for CacheKey{sql='create table
+   my_test
+(
+    id   integer,
+    name varchar(10)
+ )', withSquareBracketQuotation=true}
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Check Table Name Not in Pattern' triggered
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Check Table Name Not in Pattern' performed successfully
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn when 'TRUNCATE TABLE' detected' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn on Detection of grant that contains 'WITH GRANT OPTION'' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn on Detection of grant that contains 'WITH ADMIN OPTION'' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Engine parameters { skipOnFirstAppliedRule = false, skipOnFirstNonTriggeredRule = false, skipOnFirstFailedRule = false, priorityThreshold = 2147483647 }
+[2021-10-21 08:48:14] FINE [liquibase] Registered rules:
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Detection of 'GRANT' Statements', description = 'This check warns a user when SQL contains 'GRANT' statements so that they can ensure that the privilege being granted won't lead to security issues.', priority = '10'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Detection of 'REVOKE' Statements', description = 'This check warns a user when SQL contains 'REVOKE' statements so that they can ensure that the privilege being revoked won't lead to data access and dependency issues.', priority = '20'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn when 'DROP TABLE' detected', description = 'This check warns a user when a table is being dropped so that they can ensure that dropping the table won't lead to unintentional loss of data.', priority = '30'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn when 'DROP COLUMN' detected', description = 'This check warns a user when a column is being dropped so that they can ensure that dropping the column won't lead to unintentional loss of data.', priority = '40'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn when 'MODIFY <column>' detected', description = 'This check warns a user when a change will result in modification of a data type so they can ensure that modifying the data type won't lead to unintentional loss of data', priority = '50'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Check for specific patterns in sql', description = 'This check scans raw SQL for the presence of specific patterns and warns the user when they are found.', priority = '60'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Check Table Column Count', description = 'Ensures that no table has more than a threshold number of columns.', priority = '70'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Check Table Name Pattern', description = 'This check confirms that table names match a specific pattern.', priority = '80'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Check Table Name Not in Pattern', description = 'This check confirms that table names do not match a specific pattern.', priority = '85'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Grant of Specific Privileges', description = 'This check warns a user when changeset includes or generates sql that grants specific privileges to a user or role', priority = '90'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn when 'TRUNCATE TABLE' detected', description = 'This check warns a user when a table is being truncated so that they can ensure that truncating the table won't lead to unintentional loss of data.', priority = '100'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Detection of grant that contains 'WITH GRANT OPTION'', description = 'This check warns a user when SQL contains 'GRANT' statements that include the 'WITH GRANT OPTION' clause so that they can ensure that the privilege being granted won't lead to security issues', priority = '110'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Detection of grant that contains 'WITH ADMIN OPTION'', description = 'This check warns a user when SQL contains 'GRANT' statements that include the 'WITH ADMIN OPTION' clause so that they can ensure that the privilege being granted won't lead to security issues', priority = '130'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Changesets Must Have a Label Assigned', description = 'This check enforces the Liquibase recommendation that labels be assigned to each changeset to provide better deployment control and to enhance traceability of efforts across changesets.', priority = '170'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Changesets Must Have a Context Assigned', description = 'This check enforces the Liquibase recommendation that contexts be assigned to each changeset to provide better deployment control and to enhance traceability of efforts across changesets.', priority = '173'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Changesets Must Have a Comment Assigned', description = 'This check enforces the Liquibase recommendation that comments be added to each changeset to document the purpose of a changeset for other/future consumers of this changelog', priority = '176'}
+[2021-10-21 08:48:14] FINE [liquibase] Known facts:
+[2021-10-21 08:48:14] FINE [liquibase] Fact{name='CHANGESET', value=changelog.sql::45-insert_into_my_test::TsviZ}
+[2021-10-21 08:48:14] FINE [liquibase] Rules evaluation started
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn on Detection of 'GRANT' Statements' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn on Detection of 'REVOKE' Statements' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn when 'DROP TABLE' detected' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn when 'DROP COLUMN' detected' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn when 'MODIFY <column>' detected' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Check for specific patterns in sql' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Check Table Column Count' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Cache miss for CacheKey{sql='insert into
+   my_test
+(id,name)
+ values
+(
+   my_test_id_seq.nextval,
+   'Albert')', withSquareBracketQuotation=true}
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Check Table Name Not in Pattern' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn when 'TRUNCATE TABLE' detected' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn on Detection of grant that contains 'WITH GRANT OPTION'' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn on Detection of grant that contains 'WITH ADMIN OPTION'' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Engine parameters { skipOnFirstAppliedRule = false, skipOnFirstNonTriggeredRule = false, skipOnFirstFailedRule = false, priorityThreshold = 2147483647 }
+[2021-10-21 08:48:14] FINE [liquibase] Registered rules:
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Detection of 'GRANT' Statements', description = 'This check warns a user when SQL contains 'GRANT' statements so that they can ensure that the privilege being granted won't lead to security issues.', priority = '10'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Detection of 'REVOKE' Statements', description = 'This check warns a user when SQL contains 'REVOKE' statements so that they can ensure that the privilege being revoked won't lead to data access and dependency issues.', priority = '20'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn when 'DROP TABLE' detected', description = 'This check warns a user when a table is being dropped so that they can ensure that dropping the table won't lead to unintentional loss of data.', priority = '30'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn when 'DROP COLUMN' detected', description = 'This check warns a user when a column is being dropped so that they can ensure that dropping the column won't lead to unintentional loss of data.', priority = '40'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn when 'MODIFY <column>' detected', description = 'This check warns a user when a change will result in modification of a data type so they can ensure that modifying the data type won't lead to unintentional loss of data', priority = '50'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Check for specific patterns in sql', description = 'This check scans raw SQL for the presence of specific patterns and warns the user when they are found.', priority = '60'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Check Table Column Count', description = 'Ensures that no table has more than a threshold number of columns.', priority = '70'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Check Table Name Pattern', description = 'This check confirms that table names match a specific pattern.', priority = '80'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Check Table Name Not in Pattern', description = 'This check confirms that table names do not match a specific pattern.', priority = '85'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Grant of Specific Privileges', description = 'This check warns a user when changeset includes or generates sql that grants specific privileges to a user or role', priority = '90'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn when 'TRUNCATE TABLE' detected', description = 'This check warns a user when a table is being truncated so that they can ensure that truncating the table won't lead to unintentional loss of data.', priority = '100'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Detection of grant that contains 'WITH GRANT OPTION'', description = 'This check warns a user when SQL contains 'GRANT' statements that include the 'WITH GRANT OPTION' clause so that they can ensure that the privilege being granted won't lead to security issues', priority = '110'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Warn on Detection of grant that contains 'WITH ADMIN OPTION'', description = 'This check warns a user when SQL contains 'GRANT' statements that include the 'WITH ADMIN OPTION' clause so that they can ensure that the privilege being granted won't lead to security issues', priority = '130'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Changesets Must Have a Label Assigned', description = 'This check enforces the Liquibase recommendation that labels be assigned to each changeset to provide better deployment control and to enhance traceability of efforts across changesets.', priority = '170'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Changesets Must Have a Context Assigned', description = 'This check enforces the Liquibase recommendation that contexts be assigned to each changeset to provide better deployment control and to enhance traceability of efforts across changesets.', priority = '173'}
+[2021-10-21 08:48:14] FINE [liquibase] Rule { name = 'Changesets Must Have a Comment Assigned', description = 'This check enforces the Liquibase recommendation that comments be added to each changeset to document the purpose of a changeset for other/future consumers of this changelog', priority = '176'}
+[2021-10-21 08:48:14] FINE [liquibase] Known facts:
+[2021-10-21 08:48:14] FINE [liquibase] Fact{name='CHANGESET', value=changelog.sql::45555-createTable_persons22::SteveZ}
+[2021-10-21 08:48:14] FINE [liquibase] Rules evaluation started
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn on Detection of 'GRANT' Statements' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn on Detection of 'REVOKE' Statements' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn when 'DROP TABLE' detected' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn when 'DROP COLUMN' detected' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn when 'MODIFY <column>' detected' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Check for specific patterns in sql' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Check Table Column Count' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Cache miss for CacheKey{sql='CREATE TABLE persons22(
+    person_id NUMBER GENERATED BY DEFAULT AS IDENTITY,
+    first_name VARCHAR2(50) NOT NULL,
+    last_name VARCHAR2(50) NOT NULL,
+    PRIMARY KEY(person_id)
+)', withSquareBracketQuotation=true}
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Check Table Name Not in Pattern' triggered
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Check Table Name Not in Pattern' performed successfully
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn when 'TRUNCATE TABLE' detected' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn on Detection of grant that contains 'WITH GRANT OPTION'' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] FINE [liquibase] Rule 'Warn on Detection of grant that contains 'WITH ADMIN OPTION'' has been evaluated to false, it has not been executed
+[2021-10-21 08:48:14] SEVERE [liquibase.integration] liquibase.command.CommandFailedException: Checks run command exited with an error code of 1
+liquibase.exception.CommandExecutionException: liquibase.command.CommandFailedException: Checks run command exited with an error code of 1
+	at liquibase.command.CommandScope.execute(CommandScope.java:153)
+	at liquibase.integration.commandline.CommandRunner.call(CommandRunner.java:45)
+	at liquibase.integration.commandline.CommandRunner.call(CommandRunner.java:15)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:1953)
+	at picocli.CommandLine.access$1300(CommandLine.java:145)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2352)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2346)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2311)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at picocli.CommandLine.execute(CommandLine.java:2078)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$1(LiquibaseCommandLine.java:323)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:162)
+	at liquibase.integration.commandline.LiquibaseCommandLine.execute(LiquibaseCommandLine.java:289)
+	at liquibase.integration.commandline.LiquibaseCommandLine.main(LiquibaseCommandLine.java:80)
+Caused by: liquibase.command.CommandFailedException: Checks run command exited with an error code of 1
+	at liquibase.command.CommandResultsBuilder.commandFailed(CommandResultsBuilder.java:59)
+	at com.datical.liquibase.ext.command.checks.ChecksRunCommandStep.run(ChecksRunCommandStep.java:233)
+	at liquibase.command.CommandScope.execute(CommandScope.java:147)
+	... 14 more
+
