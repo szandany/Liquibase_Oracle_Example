@@ -69,7 +69,7 @@ END;
 
 --rollback DROP TRIGGER t2
 
---changeset TsviZ:5-create_sequence_my_test_id_seq context:TEST,PROD
+--changeset TsviZ:5-create_sequence_my_test_id_seq context:TEST
 create sequence my_test_id_seq increment by 1;
 --rollback DROP sequence my_test_id_seq
 
