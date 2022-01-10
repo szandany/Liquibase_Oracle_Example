@@ -82,7 +82,7 @@ create table
  );
 --rollback DROP table my_test
 
---changeset TsviZ:7-insert_into_my_test context:!preprod and !prod
+--changeset TsviZ:7-insert_into_my_test context:"!prod and !preprod"
 insert into
    my_test
 (id,name)
