@@ -1,1 +1,0 @@
-liquibase rollbackOneChangeSet --changeSetAuthor=TsviZ --changeSetId=45-insert_into_my_test --changeSetPath=main/200_dml/09_dml_context.sql --force
