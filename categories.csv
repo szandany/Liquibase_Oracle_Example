@@ -1,8 +1,0 @@
-SQL> 
-SQL> SELECT * FROM categories;
-
-CATEGORY_ID CATEGORY_NAME
------------ --------------------------------------------------
-        150 Miscellaneous
-
-SQL> EXIT;
